@@ -1,5 +1,5 @@
 {
-  "name": "auth-strream",
+  "name": "auth-stream",
   "version": "0.0.1",
   "description": "Authorize access before exposing a stream",
   "keywords": [],
