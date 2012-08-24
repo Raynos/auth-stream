@@ -13,8 +13,8 @@ var server = net.createServer(function (stream) {
     })
 
     stream.write("anything")
-}).listen(8080, function () {
-    var stream = net.connect(8080)
+}).listen(process.argv[2] || 8080, function () {
+    var stream = net.connect(process.argv[2] || 8080)
 
     var secret = through(function (data) {
             console.log("[CLIENT]", data.toString())

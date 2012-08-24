@@ -30,19 +30,13 @@ net.createServer(function (stream) {
 var Auth = require("auth-stream")
     , net = require("net")
 
-var stream = net.connect(8080)
-    , auth = Auth()
-
-stream.pipe(auth).pipe(stream)
+var stream = Auth("steve", "jones", net.connect(8080))
 
 stream.on("data", function (data) {
     console.log("[CLIENT]", data)
 })
 
 stream.write("anything")
-
-// login(user, pass)
-auth.login("steve", "jones")
 ```
 
 ## Installation

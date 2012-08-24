@@ -14,7 +14,7 @@ function Auth(first, second, third) {
 
 function AuthClient(user, pass, stream) {
     var auth = BufferStream().buffer()
-    stream.write("steve:jones")
+    stream.write(user + ":" + pass)
 
     stream.on("data", isOpen)
 

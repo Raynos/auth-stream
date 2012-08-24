@@ -18,8 +18,8 @@ var server = net.createServer(function (stream) {
         })
 
     stream.pipe(auth).pipe(stream)
-}).listen(8080, function () {
-    var stream = Auth("steve", "jones", net.connect(8080))
+}).listen(process.argv[2] || 8080, function () {
+    var stream = Auth("steve", "jones", net.connect(process.argv[2] || 8080))
 
     stream.on("data", function (data) {
         console.log("[CLIENT]", data.toString())
