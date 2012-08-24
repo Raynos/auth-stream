@@ -1,0 +1,33 @@
+{
+  "name": "auth-strream",
+  "version": "0.0.1",
+  "description": "Authorize access before exposing a stream",
+  "keywords": [],
+  "author": "Raynos <raynos2@gmail.com>",
+  "repository": "git://github.com/Raynos/auth-strream.git",
+  "main": "index",
+  "homepage": "https://github.com/Raynos/auth-strream",
+  "contributors": [
+    {
+      "name": "Jake Verbaten"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/Raynos/auth-strream/issues",
+    "email": "raynos2@gmail.com"
+  },
+  "dependencies": {
+    "duplex": "~0.1.2",
+    "buffer-stream": "0.0.1"
+  },
+  "devDependencies": {
+    "through": "~0.1.4"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/Raynos/auth-strream/raw/master/LICENSE"
+    }
+  ],
+  "scripts": {}
+}
