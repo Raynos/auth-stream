@@ -41,7 +41,7 @@ stream.write("anything")
 
 ## Installation
 
-`npm install auth-strream`
+`npm install auth-stream`
 
 ## Contributors
 
