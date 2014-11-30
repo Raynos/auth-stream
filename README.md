@@ -1,4 +1,4 @@
-# auth-strream
+# auth-stream
 
 Authorize access before exposing a stream
 
